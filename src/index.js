@@ -1,3 +1,8 @@
+//Make sure that babel-polyfill is only required in once
+if (!global._babelPolyfill && !window._babelPolyfill) { 
+    require("babel-polyfill");
+}
+
 import React, {Component} from 'react';
 import { setInterval } from 'timers';
 

@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['babel-polyfill', 'whatwg-fetch', './src/index.js'],
+  entry: ['whatwg-fetch', './src/index.js'],
   output: {
       path: path.resolve(__dirname, 'build'),
       filename: 'index.js',
