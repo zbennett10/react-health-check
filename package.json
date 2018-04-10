@@ -1,6 +1,6 @@
 {
   "name": "react-health-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that conducts health checks given endpoints",
   "main": "build/index.js",
   "peerDependencies": {
