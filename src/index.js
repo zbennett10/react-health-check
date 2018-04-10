@@ -47,6 +47,8 @@ export default class HealthCheck extends Component {
 
   componentDidMount() {
       const {interval} = this.props;
+      //Conduct initial checks because setInterval neglects them
+      this.conductHealthChecks();
       this.interval = setInterval(this.conductHealthChecks, interval);
   }
 
